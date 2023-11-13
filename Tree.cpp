@@ -1,13 +1,10 @@
-#define _CRT_SECURE_NO_WARNINGS
-
 #include "Tree.h"
 
 Tree* read_tree (char* input, int* i) {
 	Tree* t;
 	if (input[*i] == ' ') {
 		t = nullptr;
-	}
-	else {
+	} else {
 		char word;
 		t = new Tree[sizeof(Tree)];
 		word = input[*i];
